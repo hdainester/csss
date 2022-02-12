@@ -81,4 +81,4 @@ Examples:
 
 ## Demo
 
-Check out the [CSS Stories Demo](www.google.com) page to get an idea of how CSSS can be used (you can check the source in your browser or directly in the repo right [here](https://gitlab.com/web-utilz/csss/-/blob/master/demo/demo.html)).
+Check out the [CSS Stories Demo](https://web-utilz.gitlab.io/csss) page to get an idea of how CSSS can be used (you can view the source directly in your browser or in the repository right [here](https://gitlab.com/web-utilz/csss/-/blob/master/demo/public/index.html)).
