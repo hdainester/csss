@@ -23,7 +23,7 @@ Include a link to the stylesheet (`../csss.css`) in your `<head>` tag.
 Example:
 
 ```html
-<div class="horizontal-story">
+<div class="story-horizontal">
     <!-- story sections here -->
 </div>
 ```
@@ -36,7 +36,7 @@ Example:
 Example:
 
 ```html
-<div class="vertical-story">
+<div class="story-vertical">
     <!-- story sections here -->
 </div>
 ```
@@ -48,13 +48,13 @@ Stories with the -hidden suffix don't show their scrollbars.
 Examples:
 
 ```html
-<div class="horizontal-story-hidden">
+<div class="story-horizontal-hidden">
     <!-- story sections here -->
 </div>
 ```
 
 ```html
-<div class="vertical-story-hidden">
+<div class="story-vertical-hidden">
     <!-- story sections here -->
 </div>
 ```
@@ -66,17 +66,17 @@ Stories with the -disabled suffix don't show their scrollbars nor do they allow 
 Examples:
 
 ```html
-<div class="horizontal-story-disabled">
+<div class="story-horizontal-disabled">
     <!-- story sections here -->
 </div>
 ```
 
 ```html
-<div class="vertical-story-disabled">
+<div class="story-vertical-disabled">
     <!-- story sections here -->
 </div>
 ```
 
 ## Demo
 
-Check out the [CSS Stories Demo](www.google.com) page to get an idea of how CSSS can be used (you can check the source in your browser or directly in the repo right [here](https://www.gitlab.com/web-utilz/csss/demo/demo.html)).
+Check out the [CSS Stories Demo](www.google.com) page to get an idea of how CSSS can be used (you can check the source in your browser or directly in the repo right [here](https://gitlab.com/web-utilz/csss/-/blob/master/demo/demo.html)).
