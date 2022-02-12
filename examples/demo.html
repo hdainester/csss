@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Stories Demo</title>
+    <link rel="stylesheet" href="../csss.css" />
+    <link rel="stylesheet" href="example.css" />
+
+    <style>
+        /* Global styling for better looks. */
+        html, body {
+            margin: 0px;
+            height: 100%;
+        }
+
+        h1, h2, h3, aside, footer {
+            margin: 0;
+            padding: 8px;
+        }
+
+        h1, footer {
+            background-color: cornflowerblue;
+        }
+
+        h2, aside {
+            background-color: olivedrab;
+        }
+
+        /* Layout and styling for inner story divs. */
+        .inner-story {
+            height: 100%;
+        }
+
+        .inner-story a {
+            margin: 8px;
+        }
+
+        .inner-story > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner-story > div:nth-child(even) {
+            background: red;
+        }
+
+        .inner-story > div:nth-child(odd) {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Stories are an ideal solution for a fancy landing page. -->
+    <div class="story-vertical-hidden" style="height: 100%;">
+
+        <!-- This is the content of the landing page. -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <p>Curious?<p>
+            <p>Scroll down to see more!</p>
+        </div>
+
+        <!-- This is the main content of the page. -->
+        <main style="display: flex; flex-direction: column;">
+            <header>
+                <h1>CSS Stories Demo</h1>
+            </header>
+
+            <div style="display: flex; flex-direction: row; height: 100%;">
+                <aside style="flex: 0 0 auto;">
+                    <!-- These links will trigger scrolling to the elements with the given ids in the story below. -->
+                    <p><a href="#ch1">Chapter 1</a></p>
+                    <p><a href="#ch2">Chapter 2</a></p>
+                    <p><a href="#ch3">Chapter 3</a></p>
+                </aside>
+
+                <!-- This section is a story with horizontal alignment of its children. -->
+                <div class="story-horizontal" style="flex: 0 1 auto;">
+
+                    <!-- We set the height of each child to 100% for better looks. The width of children in horizontal stories is 100% by default. We give this child an id so we can scroll back to it easily with hrefs. -->
+                    <div id="ch1" style="height: 100%;">
+
+                        <!-- We can do whatever we want inside a story/its children. Here we have a flexbox with column layout that contains a h2 element and another story div. -->
+                        <div style="display: flex; flex-direction: column; height: 100%;">
+                            <h2 id="s1">Chapter 1</h2>
+
+                            <!-- This div is a story with horizontal alignment of its children. -->
+                            <div class="story-vertical inner-story">
+
+                                <!-- There are three distinct sections in this story each with its own header and href to the next section/chapter. -->
+                                <div id="ch1_1">
+                                    <h3>Welcome to Chapter 1</h3>
+                                    <a href="#ch1_2">Next</a>
+                                </div>
+                                <div id="ch1_2">
+                                    <p>You can scroll vertically through the sections with your mousewheel.</p>
+                                    <div>
+                                        <a href="#ch1_1">Back</a>
+                                        <a href="#ch1_3">Next</a>
+                                    </div>
+                                </div>
+                                <div id="ch1_3">
+                                    <p>As you can see the scrollbar is shown and scrolling is enabled.</p>
+                                    <div>
+                                        <a href="#ch1_2">Back</a>
+                                        <a href="#ch2_1">Chapter 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- This section is similiar to the section above. The main difference is the usage of a story with hidden scrollbar instead. -->
+                    <div id="ch2" style="height: 100%;">
+                        <div style="display: flex; flex-direction: column; height: 100%;">
+                            <h2>Chapter 2</h2>
+
+                            <!-- This is a story with vertical alignment of its children and a hidden scrollbar. -->
+                            <div class="story-vertical-hidden inner-story">
+                                <div id="ch2_1">
+                                    <h3>Welcome to Chapter 2</h3>
+                                    <div>
+                                        <a href="#ch1_3">Chapter 1</a>
+                                        <a href="#ch2_2">Next</a>
+                                    </div>
+                                </div>
+                                <div id="ch2_2">
+                                    <p>If you are on touchpad you can scroll by dragging the section up or down.</p>
+                                    <div>
+                                        <a href="#ch2_1">Back</a>
+                                        <a href="#ch2_3">Next</a>
+                                    </div>
+                                </div>
+                                <div id="ch2_3">
+                                    <p>As you can see the scrollbar isn't shown, yet scrolling is possible.</p>
+                                    <div>
+                                        <a href="#ch2_2">Back</a>
+                                        <a href="#ch3_1">Chapter 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- This section is similiar to the sections above. The main difference is the usage of a story with disabled scrollbar instead. -->
+                    <div id="ch3" style="height: 100%;">
+                        <div style="display: flex; flex-direction: column; height: 100%;">
+                            <h2>Chapter 3</h2>
+
+                            <!-- This is a story with vertical alignment of its children and a disabled scrollbar. -->
+                            <div class="story-vertical-disabled inner-story">
+                                <div id="ch3_1">
+                                    <h3>Welcome to Chapter 3</h3>
+                                    <div>
+                                        <a href="#ch2_3">Chapter 2</a>
+                                        <a href="#ch3_2">Next</a>
+                                    </div>
+                                </div>
+                                <div id="ch3_2">
+                                    <p>This story won't let you scroll with your mouswheel or by dragging on touchpad.</p>
+                                    <div>
+                                        <a href="#ch3_1">Back</a>
+                                        <a href="#ch3_3">Next</a>
+                                    </div>
+                                </div>
+                                <div id="ch3_3">
+                                    <p>The scrollbar isn't shown either. The only way to navigate is by using links (e.g. <i>Back</i>).</p>
+                                    <a href="#ch3_2">Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>This is a demo for <a href="https://gitlab.com/web-utilz/csss">CSS Stories</a>.<p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
