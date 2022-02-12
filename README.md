@@ -77,6 +77,6 @@ Examples:
 </div>
 ```
 
-## Example
+## Demo
 
 Check out the [CSS Stories Demo](www.google.com) page to get an idea of how CSSS can be used (you can check the source in your browser or directly in the repo right [here](https://www.gitlab.com/web-utilz/csss/demo/demo.html)).
