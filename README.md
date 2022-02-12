@@ -4,10 +4,12 @@ CSS Stories (CSSS) is a lightweight collection of pure CSS classes to easily def
 
 ## How to Use
 
-Include a link to the stylesheet (`../csss.css`) in your `<head>` tag.
+Include a link to the stylesheet (`csss.css`) in your `<head>` tag.
+
+For example:
 
 ```html
-<link rel="stylesheet" href="../csss.css" />
+<link rel="stylesheet" href="csss.css" />
 ```
 
 ## Documentation
