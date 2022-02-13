@@ -79,14 +79,12 @@ Examples:
 
 ## Demo
 
-Check out the [CSS Stories Demo](https://web-utilz.gitlab.io/csss) page to get an idea of how CSSS can be used (you can view the source directly in your browser or in the repository right [here](https://gitlab.com/web-utilz/csss/-/blob/master/public/index.html)).
+Check out the [CSS Stories Demo](https://web-utilz.gitlab.io/csss) page to get an idea of how CSSS can be used (you can view the source directly in your browser or in the repository right [here](https://github.com/web-utilz/csss/blob/master/public/index.html)).
 
 <p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+    <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fweb-utilz.gitlab.io%2Fcsss%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=">
         <img style="border:0;width:88px;height:31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
             alt="CSS ist valide!" />
     </a>
 </p>
-
-[CSS validation](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fweb-utilz.gitlab.io%2Fcsss%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=)
