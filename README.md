@@ -12,8 +12,8 @@ Include the `<link>` to the stylesheet in your `<head>` tag.
 
 ## Documentation
 
-- All stories are block elements with a smooth scroll behaviour and (block) snapping of its children enabled.
-- All direct children of stories snap to their start position.
+- All stories are block elements with a smooth scroll behaviour and (block) snapping of their children enabled.
+- All direct children of stories snap to their start positions.
 
 ### story-horizontal
 
